@@ -1,0 +1,17 @@
+/node_modules/
+npm-debug.log
+*.sublime-project
+*.sublime-workspace
+*.sublime-settings
+test/workspace/*
+results.txt
+config/
+deploy/
+coverage.html
+.env
+Referenced\ Packages/
+*.project
+*.settings
+salesforce.schema
+.idea
+*.iml
