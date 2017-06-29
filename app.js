@@ -9,7 +9,7 @@ let baseUrl = 'https://rogermitchell-dev-ed.my.salesforce.com/cometd/40.0';
 	or copy this value from the `sid` cookie associated
 	with your baseUrl from within the browser
 */
-let token = '00D1949343kklakfdsfs!iafdsf;lasdf030iqr23jqllkfklsdflsdkf';
+let token = '00DE00000001233333!jfdsfkljdsklfjdasjflds;fjkadsfaddasf';
 
 /*
 	set this as the API name of your platform event
@@ -37,5 +37,8 @@ cometd.handshake((shake) => {
 		cometd.subscribe('/event/' + platformEventName, (message) => {
 			console.log(message.data);
 		});
+	} else {
+		console.log('An error occurred!');
+		console.log(shake);
 	}
 });
